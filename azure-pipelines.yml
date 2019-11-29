@@ -24,7 +24,7 @@ steps:
     command: buildAndPush
     repository: apicontagem-azuredevops
     dockerfile: '**/dockerfile'
-    containerRegistry: grofferegistry.azurecr.io
+    containerRegistry: grofferegistry
     tags: |
       $(Build.BuildId)
       latest
