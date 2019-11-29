@@ -5,7 +5,7 @@ WORKDIR /app
 COPY *.csproj ./
 RUN dotnet restore
 
-RUN pwsh -Command Write-Host "TDC Porto Alegre 2019: Gerando uma nova imagem Docker e testando o PowerShell Core"
+RUN pwsh -Command Write-Host "Build via Azure DevOps: Gerando uma nova imagem Docker e testando o PowerShell Core"
 
 # Build da aplicacao
 COPY . ./
