@@ -24,3 +24,6 @@ steps:
     repository: 'apicontagem-azuredevops'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+    tags: |
+      $(Build.BuildId)
+      latest    
